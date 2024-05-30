@@ -1,2 +1,1 @@
-# most-basic-html-css-js-img-templatee
-going to use this as my template starting 
+# This is a sample project to learn and practice how to fetch data from an API and display it
