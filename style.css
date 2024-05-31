@@ -20,3 +20,18 @@ body {
   margin: 10px;
   width: 300px;
 }
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: rgb(77, 235, 77);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(34, 87, 34);
+}
