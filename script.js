@@ -21,7 +21,16 @@ weatherForm.addEventListener("submit", async (event) => {
   }
 });
 
-async function getWeatherData(city) {}
+async function getWeatherData(city) {
+  const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+
+  const response = await fetch(apiUrl);
+
+  if (!response.ok) {
+    throw new Error("Could not fetch weather data");
+  }
+  return await response.json();
+}
 
 function displayWeatherInfo(data) {}
 
