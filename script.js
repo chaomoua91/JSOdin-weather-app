@@ -3,12 +3,19 @@ const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
 const apiKey = "ad80c83c62944a4cbc111505242905";
 
-weatherForm.addEventListener("submit", (event) => {
+weatherForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   const city = cityInput.value;
 
   if (city) {
+    try {
+      const weatherData = await getWeatherData(city);
+      displayWeatherInfo(weatherData);
+    } catch (error) {
+      console.error(error);
+      displayError(error);
+    }
   } else {
     displayError("Please enter a City");
   }
