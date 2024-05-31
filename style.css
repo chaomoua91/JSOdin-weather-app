@@ -47,7 +47,7 @@ button[type="submit"]:hover {
 }
 
 h1 {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -55,4 +55,12 @@ h1 {
 p {
   font-size: 1.5rem;
   margin: 5px 0;
+}
+
+.cityDisplay,
+.tempDisplay {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
 }
