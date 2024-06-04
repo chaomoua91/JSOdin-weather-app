@@ -80,7 +80,7 @@ async function getGiphy(text) {
     }
 
     const response = await fetch(
-      "https://api.giphy.com/v1/gifs/translate?api_key=RVtCd0LhavcjcRbA3EQUbYWsRoEdLwSI&s=" +
+      "https://api.giphy.com/v1/gifs/translate?api_key=RVtCd0LhavcjcRbA3EQUbYWsRoEdLwSI&weather=0&s=" +
         keyWord,
       { mode: "cors" }
     );
